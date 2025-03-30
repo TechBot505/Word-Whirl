@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/three/three-background.jsx", "app/page.jsx", "app/providers.jsx", "app/layout.jsx", "app/stats/page.jsx", "app/settings/page.jsx", "app/practice/page.jsx", "app/help/page.jsx", "app/daily/page.jsx", "components/home/daily-challenge-banner.jsx", "components/home/home-content.jsx", "components/home/main-menu.jsx", "components/home/user-stats.jsx", "components/game/game-board.jsx", "components/game/word-tile.jsx", "lib/stores/game-store.js", "lib/utils/game-utils.js"],
   "exclude": ["node_modules"]
 }

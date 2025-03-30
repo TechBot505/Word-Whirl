@@ -23,7 +23,7 @@ export default function Settings() {
             <Label htmlFor="theme">Theme</Label>
             <Select
               value={settings.theme}
-              onValueChange={(value) => updateSettings({ theme: value as any })}
+              onValueChange={(value) => updateSettings({ theme })}
             >
               <SelectTrigger className="w-32">
                 <SelectValue placeholder="Theme" />
@@ -49,7 +49,7 @@ export default function Settings() {
             <Label htmlFor="animation">Animation Intensity</Label>
             <Select
               value={settings.animationIntensity}
-              onValueChange={(value) => updateSettings({ animationIntensity: value as any })}
+              onValueChange={(value) => updateSettings({ animationIntensity })}
             >
               <SelectTrigger className="w-32">
                 <SelectValue placeholder="Animation" />

@@ -87,7 +87,7 @@ export default function Stats() {
                             className="h-full rounded-full bg-primary transition-all"
                             style={{
                               width: `${
-                                (achievement.progress / achievement.total!) * 100
+                                (achievement.progress / achievement.total) * 100
                               }%`,
                             }}
                           />

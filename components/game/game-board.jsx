@@ -11,15 +11,15 @@ import useSound from "use-sound";
 import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
 
-interface GameBoardProps {
-  word: string;
-  hint: string;
-  onComplete: (score: number) => void;
-}
+// interface GameBoardProps {
+//   word: string;
+//   hint: string;
+//   onComplete: (score: number) => void;
+// }
 
-export function GameBoard({ word, hint, onComplete }: GameBoardProps) {
-  const [scrambledLetters, setScrambledLetters] = useState<string[]>([]);
-  const [placedLetters, setPlacedLetters] = useState<string[]>([]);
+export function GameBoard({ word, hint, onComplete }) {
+  const [scrambledLetters, setScrambledLetters] = useState([]);
+  const [placedLetters, setPlacedLetters] = useState([]);
   const [timeLeft, setTimeLeft] = useState(60);
   const [isComplete, setIsComplete] = useState(false);
   const { settings, useHint, addXp } = useGameStore();
@@ -41,7 +41,7 @@ export function GameBoard({ word, hint, onComplete }: GameBoardProps) {
     }
   }, [timeLeft, isComplete]);
 
-  const handleDrag = (letter: string, index: number) => {
+  const handleDrag = (letter, index) => {
     if (placedLetters.length < word.length) {
       setPlacedLetters([...placedLetters, letter]);
       setScrambledLetters(scrambledLetters.filter((_, i) => i !== index));

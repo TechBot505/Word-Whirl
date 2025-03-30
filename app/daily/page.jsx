@@ -15,7 +15,7 @@ export default function DailyChallenge() {
     useGameStore.setState({ currentWords: words });
   }, []);
 
-  const handleGameComplete = (score: number) => {
+  const handleGameComplete = (score) => {
     updateProgress("wordWhirl", { completed: true, score });
     addXp(score);
     incrementStreak();

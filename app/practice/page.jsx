@@ -15,7 +15,7 @@ export default function PracticePage() {
   const { addXp } = useGameStore();
   const randomWord = practiceWords[Math.floor(Math.random() * practiceWords.length)];
 
-  const handleGameComplete = (score: number) => {
+  const handleGameComplete = (score) => {
     addXp(Math.floor(score / 2)); // Half XP for practice mode
   };
 

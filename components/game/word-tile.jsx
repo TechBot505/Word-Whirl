@@ -6,14 +6,14 @@ import { animationPresets } from "@/lib/utils/game-utils";
 import { useState } from "react";
 import useSound from "use-sound";
 
-interface WordTileProps {
-  letter: string;
-  index: number;
-  onDrag?: (letter: string, index: number) => void;
-  isPlaced?: boolean;
-}
+// interface WordTileProps {
+//   letter: string;
+//   index: number;
+//   onDrag?: (letter: string, index: number) => void;
+//   isPlaced?: boolean;
+// }
 
-export function WordTile({ letter, index, onDrag, isPlaced = false }: WordTileProps) {
+export function WordTile({ letter, index, onDrag, isPlaced = false }) {
   const [isDragging, setIsDragging] = useState(false);
   const { settings } = useGameStore();
   const animations = animationPresets[settings.animationIntensity];

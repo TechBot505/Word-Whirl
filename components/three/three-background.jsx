@@ -9,7 +9,7 @@ import { GroupProps } from "@react-three/fiber";
 
 function WordSphere() {
   // Use the correct GroupProps type from @react-three/fiber
-  const sphereRef = useRef<THREE.Group>(null);
+  const sphereRef = useRef(null);
 
   useFrame(() => {
     if (sphereRef.current) {

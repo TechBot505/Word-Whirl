@@ -95,7 +95,7 @@ export default function HelpPage() {
             <ul className="list-inside list-disc space-y-2">
               <li>Practice mode is great for learning without pressure</li>
               <li>Look for common letter patterns in English words</li>
-              <li>Use the hint when you're truly stuck to save time</li>
+              <li>Use the hint when you&apos;re truly stuck to save time</li>
               <li>Pay attention to the word category in the hint</li>
             </ul>
           </CardContent>
